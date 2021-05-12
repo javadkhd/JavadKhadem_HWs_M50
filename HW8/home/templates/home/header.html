@@ -1,0 +1,949 @@
+{% load static %}
+
+
+<header id="header" class="header-transparent header-effect-shrink"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+    <div class="header-body border-top-0 bg-dark box-shadow-none">
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <a href="#">
+                                <img alt="JJ-Logo" width="40" height="40" src="{% static 'img/jj1.png' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+                    <div class="header-row">
+                        <div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+                            <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+
+
+                                        <li class="dropdown">
+                                            <a data-hash class="dropdown-item dropdown-toggle" href="{% url 'home:home' %}">
+                                                سایت jj-اینا
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="{% url 'blog:blog' %}">بلاگ</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="">
+                                            <a data-hash class="dropdown-item dropdown-toggle" href="{% url 'blog:blog' %}">
+                                                بلاگ
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" data-hash data-hash-offset="68"
+                                               href="#">خدمات</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" data-hash data-hash-offset="68"
+                                               href="#">پروژه ها</a>
+                                        </li>
+                                        <!--<li>-->
+                                        <!--<a class="dropdown-item" data-hash data-hash-offset="68" href="#clients">مشتریان</a>-->
+                                        <!--</li>-->
+                                        <li>
+                                            <a class="dropdown-item" data-hash data-hash-offset="68" href="#">آشنایی
+                                                با تیم</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" data-hash data-hash-offset="68"
+                                               href="#">تماس با ما</a>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#">
+                                                ویژگی ها
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">سرصفحه ها</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item"
+                                                               href="">نمای کلی</a>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">کلاسیک</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کلاسیک</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کلاسیک
+                                                                    + منوی انتخاب زبان</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کلاسیک
+                                                                    + لوگوی بزرگ</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">مسطح</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مسطح</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مسطح
+                                                                    + نوار بالا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مسطح
+                                                                    + نوار بالا + خط بالا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مسطح
+                                                                    + نوار بالای رنگی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مسطح
+                                                                    + خطوط</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">مرکز</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مرکز</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مرکز
+                                                                    + ناوبری دوگانه</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مرکز
+                                                                    + ناوبری + دکمه ها</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مرکز
+                                                                    زیر اسلایدر</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">شناور</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    شناور</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">آیکن
+                                                                    های شناور</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">زیر
+                                                            اسلایدر</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">تمام ویدئو</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">باریک</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">چسبان</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">چسبان
+                                                                    کوچک شونده</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">چسبان
+                                                                    ایستا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">چسبان
+                                                                    با لوگوی متغیر</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">چسبان
+                                                                    ظاهر شونده</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">شفاف</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">شفاف
+                                                                    روشن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">شفاف
+                                                                    تیره</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">شفاف
+                                                                    روشن + خط پایین</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">شفاف
+                                                                    تیره + خط پایین</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">شفاف
+                                                                    پایین اسلایدر</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نیمه
+                                                                    شفاف روشن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نیمه
+                                                                    شفاف تیره</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نیمه
+                                                                    شفاف زیر اسلایدر</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نیمه
+                                                                    شفاف + نوار بالا + خطوط</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">تمام عرض</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض + خطوط</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض شفاف روشن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض شفاف تیره</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض نیمه شفاف روشن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض نیمه شفاف تیره</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">نوار فهرست</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    فهرست</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    فهرست تمام عرض</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    فهرست قرصی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    فهرست جدا شده</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    فهرست + آیکن ها + جستجو</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">نوار کناری</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">نوار کناری
+                                                                        راست</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">منوی
+                                                                            کشویی</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">بسط
+                                                                            داده شونده</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ستون
+                                                                            ها</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">اسلاید</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">نیمه
+                                                                            شفاف</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">تیره</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">نوار کناری
+                                                                        چپ</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">منوی
+                                                                            کشویی</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">بسط
+                                                                            داده شونده</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ستون
+                                                                            ها</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">اسلاید</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">نیمه
+                                                                            شفاف</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">تیره</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">نوار کناری
+                                                                        خارج از چارچوب</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">هل
+                                                                            دادن</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">اسلاید</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">سرصفحه
+                                                                    کناری نوار باریک</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">ورود /
+                                                            ثبت نام</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">وارد شده</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">سبد خرید
+                                                            کوچک</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">طرح های جستجو</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ورودی
+                                                                    ساده</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ورودی
+                                                                    ساده ظاهر شونده</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">منوی
+                                                                    کشویی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ورودی
+                                                                    بزرگ پنهان</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    صفحه</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">اضافی</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">آیکن
+                                                                    بزرگ</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">آیکن
+                                                                    های بزرگ بالا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">دکمه</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">پس
+                                                                    زمینه رنگی</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">فهرست ها</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">قرص ها</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">قرص
+                                                                    ها</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">قرص
+                                                                    ها + فلش ها</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">قرص
+                                                                    ها با متن تیره</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">قرص
+                                                                    ها با منوی کشویی رنگی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">قرص
+                                                                    های مستطیلی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">قرص
+                                                                    های دور گرد</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">نوار ها</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    با متن تیره</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    با منوی کشویی رنگی</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">جلوه های هاور</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    بالا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    بالای متحرک</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    بالا با منوی کشویی رنگی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    پایین</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    پایین متحرک</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">اسلاید</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">زیر
+                                                                    عنوان</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    زیر متن</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">عمودی</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">منوی
+                                                                    کشویی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بسط
+                                                                    داده شونده</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ستون
+                                                                    ها</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">اسلاید</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">همبرگر</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نوار
+                                                                    کناری</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">لایه‌ی
+                                                                    رویی</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">طرح های منوی کشویی</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تیره</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">روشن</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">رنگ
+                                                                    ها</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">خط
+                                                                    بالا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مربع</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">فلش
+                                                                    دار</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">فلش
+                                                                    دار در وسط</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مدرن
+                                                                    روشن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مدرن
+                                                                    تیره</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">جلوه های منوی
+                                                                کشویی</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بدون
+                                                                    جلوه</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">محو
+                                                                    شدن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">حرکت
+                                                                    به بالا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">حرکت
+                                                                    به پایین</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">حرکت
+                                                                    به راست</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">حرکت
+                                                                    به چپ</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">طرح های فونت</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کوچک</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">متوسط</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بزرگ</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">دومین</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">آیکن‌ها</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">آیکن‌ها</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">آیکن
+                                                                    های شناور</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">زیر
+                                                            عنوان</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">جدا کننده
+                                                            ها</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">لوگو در
+                                                            میان</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">ناوبری تک
+                                                            صفحه</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">کلیک
+                                                            برای باز شدن</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">تیتر های صفحه</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item"
+                                                               href="">نمای
+                                                            کلی</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">کلاسیک</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کوچک</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">متوسط</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بزرگ</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">مدرن</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کوچک</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">متوسط</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بزرگ</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">رنگ ها</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">اولیه</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ثانویه</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">سومین</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">چهارمین</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">روشن</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تیره</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">مکان عنوان</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">راست</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">کوچک</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">متوسط</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">بزرگ</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">چپ</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">کوچک</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">متوسط</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">بزرگ</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">مرکز</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">کوچک</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">متوسط</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">بزرگ</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">پس زمینه</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ثابت</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">پارالاکس</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ویدئو</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">سرصفحه
+                                                                    شفاف</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">الگو</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">لایه‌ی
+                                                                    رویی</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمیز
+                                                                    (بدون پس زمینه)</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">اضافی</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">تکه مسیر</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">خارج</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">تیره</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">اسکرول
+                                                                    به محتوا</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">پاصفحه ها</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item"
+                                                               href="">نمای کلی</a>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">کلاسیک</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کلاسیک</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">پیشرفته</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">فشرده</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ساده</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مکان
+                                                                    ها</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">کپی رایت</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">روشن</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">تیره</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">آیکن
+                                                                            های اجتماعی</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">رنگ ها</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">اولیه</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ثانویه</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">سومین</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">چهارمین</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">روشن</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">روشن
+                                                                            ساده</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">مدرن</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مدرن</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">طرح
+                                                                    فونت دوم</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمیز</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">لینک
+                                                                    های مفید</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">پس زمینه</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">تصویر
+                                                                            ساده</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">تصویر
+                                                                            پیشرفته</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ویدئو
+                                                                            ساده</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">نوار متنی</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">دکمه</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ساده</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">بلاگ</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بلاگ
+                                                                    کلاسیک</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">تجارت الکترونیک</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تجارت
+                                                                    الکترونیک کلاسیک</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">فرم تماس</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">کلاسیک</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">بالای
+                                                                    نقشه</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">مرکز</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ستون
+                                                                    ها</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">لورم</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                       href="">نقشه
+                                                                    پنهان</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">تمام
+                                                                    عرض</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a class="dropdown-item" href="#">اضافی</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">ساده</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">آیکن
+                                                                            های اجتماعی بالا</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">آیکن
+                                                                            های بزرگ</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">آخرین
+                                                                    کارها</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">ظاهر
+                                                                    شدن</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                       href="">اینستاگرام</a>
+                                                                </li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a class="dropdown-item" href="#">تمام عرض</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ساده
+                                                                            روشن</a></li>
+                                                                        <li><a class="dropdown-item"
+                                                                               href="">ساده
+                                                                            تیره</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">اسلایدر ها</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="">اسلایدر
+                                                            Revolution</a></li>
+                                                        <li><a class="dropdown-item" href="">اسلایدر
+                                                            Nivo</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">اختیارات طرح</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item"
+                                                               href="">چارچوب</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">تیره</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">اضافی</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item"
+                                                               href="">سیستم توری</a></li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">بارگذاری صفحه</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                               href="">انتقال صفحه</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="">بارگذاری
+                                                            تنبل</a></li>
+                                                        <li><a class="dropdown-item" href="">پنل
+                                                            کناری</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            {% if user.is_authenticated %}
+                                                <a class="" href="#">خروج</a>
+                                            {% else %}
+                                                <a class="" href="#">ورود</a>
+                                            {% endif %}
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <button class=" btn header-btn-collapse-nav" data-toggle="collapse"
+                                    data-target=".header-nav-main nav">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,279 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block page_header_title %}
+    blog
+{% endblock %}
+
+{% block body_content %}
+
+			<div role="main" class=" main" id="blog">
+
+				<section class="wrapper page-header page-header-modern bg-color-dark-scale-1 page-header-md">
+					<div class="mt-5 container">
+						<div class="row">
+
+							<div class="col-md-12 align-self-center p-static order-2 text-center">
+								<h1 class="text-light font-weight-bold text-8">Welcome to JJ's blog</h1>
+								<span class="sub-title text-light">مقاله های jj را مطالعه کنید</span>
+							</div>
+
+							<div class="col-md-12 align-self-center order-1">
+
+								<ul class="breadcrumb d-block text-center">
+									<li><a href="{% url 'home:home' %}">خانه</a></li>
+									<li class="active">بلاگ</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class=" container py-4">
+
+					<div class="row">
+						<div class="col">
+							<div class="blog-posts">
+
+								<div class="row">
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-1.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">کوهستان شگفت انگیز</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">تونی استارک</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">کسب و کار خلاق</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">جان اسنو</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-3.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">راه های بی نهایت</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">جان اسنو</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-4.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">زندگی یک توسعه دهنده</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">جسیکا آلبا</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-5.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">آسمان آبی</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">اولیور کویین</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-6.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">زندگی شب</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">اولیور کویین</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-7.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">یک دنیای دیگر</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">جان اسنو</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-8.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">تیم خلاق</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">اولیور کویین</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+									<div class="col-md-6 col-lg-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html">
+													<img src="img/blog/medium/blog-9.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-7 mt-3 mb-2 pt-1"><a href="blog-post.html">تنها در جنگل</a></h2>
+												<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+
+												<div class="post-meta">
+													<span><i class="far fa-user"></i> توسط  <a href="#">جان اسنو</a> </span>
+													<span><i class="far fa-folder"></i> <a href="#">اخبار</a>, <a href="#">طراحی</a> </span>
+													<span><i class="far fa-comments"></i> <a href="#">12 دیدگاه</a></span>
+													<span class="d-block mt-2 pt-1"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+												</div>
+
+											</div>
+										</article>
+									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col">
+										<ul class="pagination float-right">
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+{% endblock %}

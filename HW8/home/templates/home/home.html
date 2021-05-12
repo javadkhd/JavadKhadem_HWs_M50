@@ -1,0 +1,1053 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block page_header_title %}
+    home
+{% endblock %}
+
+{% block body_content %}
+
+    <div role="main" class="main" id="home">
+        <div class="slider-container rev_slider_wrapper" style="height: 100vh;">
+            <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider
+                 data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1140, 'gridheight': 800, 'responsiveLevels': [4096,1200,992,500]}">
+                <ul>
+                    <li class="slide-overlay" data-transition="fade">
+                        <img
+                                src="{% static 'img/slides/slide-one-page-1-1.jpg' %}"
+                                alt=""
+                                data-bgposition="center center"
+                                data-bgfit="cover"
+                                data-bgrepeat="no-repeat"
+                                class="rev-slidebg">
+
+                        <div
+                                class="tp-caption tp-resizeme"
+                                data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"opacity:0;x:100%;y:-100%;","to":"o:1;x:0;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-type="image"
+                                data-x="right"
+                                data-hoffset="['0','-150','-200','-200']"
+                                data-y="top"
+                                data-voffset="['-100','-150','-200','-200']"
+                                data-width="['auto']"
+                                data-height="['auto']"
+                                data-basealign="slide"><img src="{% static 'img/slides/slide-one-page-1-2.jpg' %}"
+                                                            alt=""></div>
+
+                        <div
+                                class="tp-caption tp-resizeme"
+                                data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"opacity:0;x:-100%;y:-100%;","to":"o:1;x:0;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-type="image"
+                                data-x="left"
+                                data-hoffset="['0','-150','-200','-200']"
+                                data-y="top"
+                                data-voffset="['-100','-150','-200','-200']"
+                                data-width="['auto']"
+                                data-height="['auto']"
+                                data-basealign="slide"><img src="{% static 'img/slides/slide-one-page-1-3.jpg' %}"
+                                                            alt=""></div>
+
+                        <div
+                                class="tp-caption tp-resizeme"
+                                data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"opacity:0;x:100%;y:100%;","to":"o:1;x:0;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-type="image"
+                                data-x="right"
+                                data-hoffset="['0','-150','-200','-200']"
+                                data-y="bottom"
+                                data-voffset="['-100','-150','-200','-200']"
+                                data-width="['auto']"
+                                data-height="['auto']"
+                                data-basealign="slide"><img src="{% static 'img/slides/slide-one-page-1-4.jpg' %}"
+                                                            alt=""></div>
+
+                        <div
+                                class="tp-caption tp-resizeme"
+                                data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"opacity:0;x:-100%;y:100%;","to":"o:1;x:0;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-type="image"
+                                data-x="left"
+                                data-hoffset="['0','-150','-200','-200']"
+                                data-y="bottom"
+                                data-voffset="['-100','-150','-200','-200']"
+                                data-width="['auto']"
+                                data-height="['auto']"
+                                data-basealign="slide"><img src="{% static 'img/slides/slide-one-page-1-5.jpg' %}"
+                                                            alt=""></div>
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['-145','-145','-145','-310']"
+                                data-y="center"
+                                data-voffset="['-110','-110','-110','-260']"
+                                data-start="1000"
+                                data-transform_in="x:[-300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"><img
+                                src="{% static 'img/slides/slide-title-border.png' %}"
+                                alt=""></div>
+
+                        <div
+                                class="tp-caption text-color-light font-weight-normal"
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-110','-110','-110','-260']"
+                                data-start="700"
+                                data-fontsize="['16','16','16','40']"
+                                data-lineheight="['25','25','25','45']"
+                                data-transform_in="y:[-50%];opacity:0;s:500;">JJ همیشه در تلاش است
+                        </div>
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['145','145','145','310']"
+                                data-y="center"
+                                data-voffset="['-110','-110','-110','-260']"
+                                data-start="1000"
+                                data-transform_in="x:[300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"><img
+                                src="{% static 'img/slides/slide-title-border.png' %}"
+                                alt=""></div>
+
+                        <h1
+                                class="tp-caption font-weight-extra-bold text-color-light negative-ls-1"
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-45','-45','-45','-115']"
+                                data-fontsize="['50','50','50','90']"
+                                data-lineheight="['50','50','50','90']">بهترین طراحی را دارد</h1>
+
+                        <div
+                                class="tp-caption"
+                                data-frames='[{"delay":2000,"speed":500,"frame":"0","from":"opacity:0;x:-10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center"
+                                data-hoffset="['120','120','120','160']"
+                                data-y="center"
+                                data-voffset="['0','0','0','-40']"><img
+                                src="{% static 'img/slides/slide-blue-line-big.png' %}" alt="">
+                        </div>
+
+                        <div
+                                class="tp-caption font-weight-light ws-normal text-center"
+                                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['48','48','48','80']"
+                                data-width="['530','530','530','1100']"
+                                data-fontsize="['18','18','18','40']"
+                                data-lineheight="['34','34','34','76']"
+                                style="color: #b5b5b5;">مورد اعتماد بیش از <strong
+                                class="text-color-light">30,000</strong> مشتری راضی.
+                        </div>
+
+                        <!--<a-->
+                        <!--class="tp-caption btn btn-primary btn-rounded font-weight-semibold"-->
+                        <!--data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'-->
+                        <!--data-hash-->
+                        <!--data-hash-offset="85"-->
+                        <!--href="#projects"-->
+                        <!--data-x="center"-->
+                        <!--data-hoffset="0"-->
+                        <!--data-y="center"-->
+                        <!--data-voffset="['133','133','133','255']"-->
+                        <!--data-whitespace="nowrap"-->
+                        <!--data-fontsize="['14','14','14','33']"-->
+                        <!--data-paddingtop="['15','15','15','40']"-->
+                        <!--data-paddingright="['45','45','45','110']"-->
+                        <!--data-paddingbottom="['15','15','15','40']"-->
+                        <!--data-paddingleft="['45','45','45','110']">هم اکنون شروع کنید!</a>-->
+
+                    </li>
+                    <li class="slide-overlay" data-transition="fade">
+                        <img
+                                src="{% static 'img/slides/slide-bg-2.jpg' %}"
+                                alt=""
+                                data-bgposition="center center"
+                                data-bgfit="cover"
+                                data-bgrepeat="no-repeat"
+                                class="rev-slidebg">
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['-150','-150','-150','-330']"
+                                data-y="center"
+                                data-voffset="['-85','-85','-85','-175']"
+                                data-start="1000"
+                                data-transform_in="x:[-300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"><img
+                                src="{% static 'img/slides/slide-title-border.png' %}"
+                                alt=""></div>
+
+                        <div
+                                class="tp-caption text-color-light font-weight-normal"
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-85','-85','-85','-175']"
+                                data-start="700"
+                                data-fontsize="['16','16','16','40']"
+                                data-lineheight="['25','25','25','45']"
+                                data-transform_in="y:[-50%];opacity:0;s:500;">قالب حرفه ای برای وب سایت شما
+                        </div>
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['150','150','150','330']"
+                                data-y="center"
+                                data-voffset="['-85','-85','-85','-175']"
+                                data-start="1000"
+                                data-transform_in="x:[300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"><img
+                                src="{% static 'img/slides/slide-title-border.png' %}"
+                                alt=""></div>
+
+                        <div
+                                class="tp-caption font-weight-extra-bold text-color-light secondary-font"
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-20','-20','-20','-40']"
+                                data-fontsize="['50','50','50','90']"
+                                data-lineheight="['50','50','50','90']">بهترین طراحی
+                        </div>
+
+                        <div
+                                class="tp-caption font-weight-light ws-normal text-center"
+                                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['73','73','73','150']"
+                                data-width="['530','530','530','1100']"
+                                data-fontsize="['18','18','18','40']"
+                                data-lineheight="['34','34','34','76']"
+                                style="color: #b5b5b5;">
+                            مورد اعتماد بیش از <strong class="text-color-light">30,000</strong> کاربر راضی.
+                        </div>
+
+                    </li>
+                    <li class="slide-overlay slide-overlay-dark" data-transition="fade">
+                        <img
+                                src="{% static 'img/slides/slide-bg-6.jpg' %}"
+                                alt=""
+                                data-bgposition="center center"
+                                data-bgfit="cover"
+                                data-bgrepeat="no-repeat"
+                                class="rev-slidebg">
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['-145','-145','-145','-320']"
+                                data-y="center"
+                                data-voffset="['-110','-110','-110','-200']"
+                                data-start="1000"
+                                data-transform_in="x:[-300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"><img
+                                src="{% static 'img/slides/slide-title-border.png' %}"
+                                alt=""></div>
+
+                        <div
+                                class="tp-caption text-color-light font-weight-normal"
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-110','-110','-110','-200']"
+                                data-start="700"
+                                data-fontsize="['16','16','16','40']"
+                                data-lineheight="['25','25','25','45']"
+                                data-transform_in="y:[-50%];opacity:0;s:500;">بهترین قالب برای وب سایت شما
+                        </div>
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['145','145','145','320']"
+                                data-y="center"
+                                data-voffset="['-110','-110','-110','-200']"
+                                data-start="1000"
+                                data-transform_in="x:[300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"><img
+                                src="{% static 'img/slides/slide-title-border.png' %}"
+                                alt=""></div>
+
+                        <div
+                                class="tp-caption font-weight-extra-bold text-color-light secondary-font"
+                                data-frames='[{"delay":1300,"speed":1000,"frame":"0","from":"opacity:0;x:50%;","to":"opacity:0.7;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-20','-20','-20','-25']"
+                                data-fontsize="['145','145','145','250']"
+                                data-lineheight="['145','145','145','250']">JJ-اینا
+                        </div>
+
+                        <div
+                                class="tp-caption font-weight-light text-color-light"
+                                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['105','105','105','200']"
+                                data-fontsize="['18','18','18','40']"
+                                data-lineheight="['34','34','34','76']">بهترین انتخاب برای وب سایت جدید شما
+                        </div>
+
+                    </li>
+                    <li class="slide-overlay" data-transition="fade">
+                        <img
+                                src="{% static 'img/blank.gif' %}"
+                                alt=""
+                                data-bgposition="center center"
+                                data-bgfit="cover"
+                                data-bgrepeat="no-repeat"
+                                class="rev-slidebg">
+
+                        <div
+                                class="rs-background-video-layer"
+                                data-forcerewind="on"
+                                data-volume="mute"
+                                data-videowidth="100%"
+                                data-videoheight="100%"
+                                data-videomp4="{% static 'video/memory-of-a-woman.mp4' %}"
+                                data-videopreload="preload"
+                                data-videoloop="loop"
+                                data-forcecover="1"
+                                data-aspectratio="16:9"
+                                data-autoplay="true"
+                                data-autoplayonlyfirsttime="false"
+                                data-nextslideatend="false"></div>
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['-145','-145','-145','-310']"
+                                data-y="center"
+                                data-voffset="['-85','-85','-85','-170']"
+                                data-start="1000"
+                                data-transform_in="x:[-300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"
+                                style="z-index: 5;"><img src="{% static 'img/slides/slide-title-border.png' %}" alt="">
+                        </div>
+
+                        <div
+                                class="tp-caption text-color-light font-weight-normal"
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-85','-85','-85','-170']"
+                                data-start="700"
+                                data-fontsize="['16','16','16','40']"
+                                data-lineheight="['25','25','25','45']"
+                                data-transform_in="y:[-50%];opacity:0;s:500;"
+                                style="z-index: 5;">ما سخت تلاش می کنیم
+                        </div>
+
+                        <div
+                                class="tp-caption"
+                                data-x="center"
+                                data-hoffset="['145','145','145','310']"
+                                data-y="center"
+                                data-voffset="['-85','-85','-85','-170']"
+                                data-start="1000"
+                                data-transform_in="x:[300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;"
+                                style="z-index: 5;"><img src="{% static 'img/slides/slide-title-border.png' %}" alt="">
+                        </div>
+
+                        <div
+                                class="tp-caption font-weight-extra-bold text-color-light secondary-font"
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['-20','-20','-20','-30']"
+                                data-fontsize="['50','50','50','90']"
+                                data-lineheight="['50','50','50','90']"
+                                style="z-index: 5;">ویدئو های عالی دارد
+                        </div>
+
+                        <div
+                                class="tp-caption font-weight-light ws-normal text-center"
+                                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-voffset="['73','73','73','155']"
+                                data-width="['530','530','530','1100']"
+                                data-fontsize="['18','18','18','40']"
+                                data-lineheight="['34','34','34','76']"
+                                style="color: #b5b5b5; z-index: 5;">
+
+                            مورد اعتماد بیش از <strong class="text-color-light">30,000</strong>مشتری راضی
+                        </div>
+
+                        <div class="tp-dottedoverlay tp-opacity-overlay"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="section bg-light border-0 py-0 m-0">
+            <div class="container pt-2">
+                <div class="row my-5 pb-5">
+                    <div class="col-lg-6 pr-5">
+                        <h2 class="font-weight-normal text-6 mb-2 pb-1"><strong
+                                class="font-weight-extra-bold">JJ-اینا</strong> چه کسی هستند</h2>
+                        <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                            فعلی تکنولوژی مورد نیاز و کاربردهای</p>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه</p>
+                        <a href="#" class="font-weight-semibold text-decoration-none learn-more text-2">مشاهده بیشتر <i
+                                class="fas fa-chevron-left ml-2"></i></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="progress-bars mt-5">
+                            <div class="progress-label mb-1">
+                                <span>Reinforcement Learning, Neural Network, Fuzzy, Evolutionary Algorithm, Web Scrapping</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-primary" data-appear-progress-animation="100%">
+                                    <span class="progress-bar-tooltip">100%</span>
+                                </div>
+                            </div>
+                            <div class="progress-label mb-1">
+                                <span>Deep Learning, Game Theory, Image Processing</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-primary" data-appear-progress-animation="70%"
+                                     data-appear-animation-delay="300">
+                                    <span class="progress-bar-tooltip">70%</span>
+                                </div>
+                            </div>
+                            <div class="progress-label mb-1">
+                                <span>Python, Octave, Matlab</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-primary" data-appear-progress-animation="100%"
+                                     data-appear-animation-delay="600">
+                                    <span class="progress-bar-tooltip">100%</span>
+                                </div>
+                            </div>
+                            <div class="progress-label mb-1">
+                                <span>Cryptography, MQL, Sql</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-primary" data-appear-progress-animation="30%"
+                                     data-appear-animation-delay="1200">
+                                    <span class="progress-bar-tooltip">30%</span>
+                                </div>
+                            </div>
+
+                            <div class="progress-label mb-1">
+                                <span>Django</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-primary" data-appear-progress-animation="5%"
+                                     data-appear-animation-delay="1200">
+                                    <span class="progress-bar-tooltip">5%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+
+                        <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+                            <div class="bg-color-grey-scale-1 flip-front p-5">
+                                <div class="flip-content my-4">
+                                    <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
+                                    <h4 class=" font-weight-bold text-color-primary text-4">قدم اول</h4>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون</p>
+                                </div>
+                            </div>
+                            <div class="flip-back d-flex align-items-center p-5"
+                                 style="background-image: url({% static 'img/generic/generic-corporate-17-1.jpg' %}); background-size: cover; background-position: center;">
+                                <div class="flip-content my-4">
+                                    <h4 class="font-weight-bold text-color-light">دیدار اول</h4>
+                                    <p class="font-weight-light text-color-light opacity-5">لورم ایپسوم متن ساختگی با
+                                        تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                                        متون</p>
+                                    <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">آشنایی
+                                        بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+
+                        <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+                            <div class="bg-color-grey-scale-1 flip-front p-5">
+                                <div class="flip-content my-4">
+                                    <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
+                                    <h4 class="font-weight-bold text-color-primary text-4">قدم دوم</h4>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون</p>
+                                </div>
+                            </div>
+                            <div class="flip-back d-flex align-items-center p-5"
+                                 style="background-image: url({% static 'img/generic/generic-corporate-17-1.jpg' %}); background-size: cover; background-position: center;">
+                                <div class="flip-content my-4">
+                                    <h4 class="font-weight-bold text-color-light">دیدار اول</h4>
+                                    <p class="font-weight-light text-color-light opacity-5">لورم ایپسوم متن ساختگی با
+                                        تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                                        متون</p>
+                                    <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">آشنایی
+                                        بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+
+                        <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+                            <div class="bg-color-grey-scale-1 flip-front p-5">
+                                <div class="flip-content my-4">
+                                    <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
+                                    <h4 class="font-weight-bold text-color-primary text-4">قدم سوم</h4>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است. چاپگرها و متون</p>
+                                </div>
+                            </div>
+                            <div class="flip-back d-flex align-items-center p-5"
+                                 style="background-image: url({% static 'img/generic/generic-corporate-17-1.jpg' %}); background-size: cover; background-position: center;">
+                                <div class="flip-content my-4">
+                                    <h4 class="font-weight-bold text-color-light">دیدار اول</h4>
+                                    <p class="font-weight-light text-color-light opacity-5">لورم ایپسوم متن ساختگی با
+                                        تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                                        متون</p>
+                                    <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">آشنایی
+                                        بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container" style=" margin-top: 20px">
+                    <div class="row align-items-center justify-content-center pb-4 pb-lg-0">
+                        <div class="col-lg-6 order-2 order-lg-1 pr-5 pt-4 pt-lg-0 mt-md-5 mt-lg-0 appear-animation"
+                             data-appear-animation="fadeInRightShorter">
+                            <h2 class="font-weight-normal text-6 mb-3">ما <strong class="font-weight-extra-bold">چه
+                                کسی</strong> هستیم</h2>
+                            <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای</p>
+                            <p class="pb-2 mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان</p>
+                            <!--<div style="height: px"></div>-->
+                            <!--<a href="#" class="btn btn-dark font-weight-semibold btn-py-2 px-5">تاریخچه ما</a>-->
+                        </div>
+                        <div style="margin-left: -10%; margin-right: 5%; "
+                             class="col-9 col-lg-6 order-1 order-lg-6 scale-3 pb-5 pb-lg-0 mt-0 mt-md-4 mb-5 mb-lg-0">
+                            <img class="img-fluid appear-animation" src="{% static 'img/ML10.png' %}"
+                                 data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"
+                                 data-plugin-options="{'accY': -100}" alt="ML">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+                class="mt-5 are-you-looking-for parallax section section-text-light section-parallax section-center overlay overlay-show overlay-op-8 my-0"
+                data-plugin-parallax data-plugin-options="{'speed': 2.0}"
+                data-image-src="{% static 'img/parallax/parallax-3.jpg' %}">
+
+            <div class="container my-n2">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5">
+                        <p class="font-weight-semibold mb-2 text-color-light appear-animation"
+                           data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span
+                                class="line-pre-title bg-color-primary appear-animation"
+                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>آیا
+                            به دنبال یک</p>
+                        <h2 class="text-color-light font-weight-bolder text-capitalize mb-2 font-size-32 appear-animation"
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">مشاوره حرفه ای
+                            کسب و کار هستید؟</h2>
+                        <p class="font-weight-semibold text-color-light mb-0 appear-animation"
+                           data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">استراتژی شرکت
+                            خود را بر اساس راهنمایی های ما بچینید!</p>
+                    </div>
+                    <div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
+								<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation"
+                                      data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
+									<span>
+										<img width="18" height="25"
+                                             src="{% static 'img/demos/business-consulting-2/icons/phone.svg' %}"
+                                             alt="Phone">
+									</span>
+									<a class="text-color-light text-decoration-none ltr-text" href="tel:123-456-7890">(800) 123-4567</a>
+								</span>
+                        <a href="#"
+                           class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation"
+                           data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">مشاوره اولیه
+                            رایگان</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class=" section section-height-3 border-0 m-0 appear-animation"
+                 data-appear-animation="fadeIn">
+            <div class="container my-3">
+                <div class="row mb-5">
+                    <div class="col text-center appear-animation" data-appear-animation="fadeInUpShorter"
+                         data-appear-animation-delay="200">
+                        <h2 class="font-weight-bold text-color-dark mb-2">jjاینا</h2>
+
+                        <p class="text-color-dark opacity-7">تیم کاری jjاینا</p>
+                    </div>
+                </div>
+
+
+                <div class="owl-carousel owl-theme"
+                     data-plugin-options="{'items': 3, 'autoplay': true, 'margin': 20, 'autoplayTimeout': 3000}">
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 mb-3 border-radius-0 box-shadow-1 ">
+                        <div class="card-body p-2 text-center">
+
+                            <p class="pt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و</p>
+
+                            <div class="myteam">
+                                <img src="{% static 'img/demos/medical-2/doctors/doctor-1.png' %}"
+                                     class=" rounded-circle" alt="image">
+
+                                <!--<a href="#" class="details-btn"><i class="fas fa-plus"></i></a>-->
+                            </div>
+
+                            <strong class="font-weight-bolder text-dark d-block text-5 mt-3 mb-1 line-height-double">
+                                <a href="#" class="text-dark">
+                                    جان اسنو
+                                </a>
+                            </strong>
+                            <span class="text-uppercase d-block text-default font-weight-semibold text-1 p-relative bottom-4 mb-0">از خوب های تیم jj</span>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-primary section section-height-3 border-0 m-0 appear-animation"
+                 data-appear-animation="fadeIn">
+            <div class="container my-3">
+                <div class="row mb-5">
+                    <div class="col text-center appear-animation" data-appear-animation="fadeInUpShorter"
+                         data-appear-animation-delay="200">
+                        <h2 class="font-weight-bold text-color-light mb-2">خدمات</h2>
+
+                        <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ</p>
+                    </div>
+                </div>
+                <div class="row mb-lg-4">
+                    <div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter"
+                         data-appear-animation-delay="300">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="icons icon-support text-color-light"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-color-light text-4 mb-2">پشتیبانی مشتری</h4>
+                                <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از
+                                    صنعت <span class="alternative-font text-color-light">لورم ایپسوم</span> لورم
+                                    ایپسوم
+                                    متن ساختگی با تولید سادگی نامفهوم</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="icons icon-layers text-color-light"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-color-light text-4 mb-2">اسلایدر ها</h4>
+                                <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از
+                                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                    مجله</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter"
+                         data-appear-animation-delay="300">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="icons icon-menu text-color-light"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-color-light text-4 mb-2">دکمه ها</h4>
+                                <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از
+                                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                    مجله</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter"
+                         data-appear-animation-delay="300">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="icons icon-doc text-color-light"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-color-light text-4 mb-2">HTML5 / CSS3 / JS</h4>
+                                <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از
+                                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                    مجله</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="icons icon-user text-color-light"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-color-light text-4 mb-2">آیکن‌ها</h4>
+                                <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از
+                                    صنعت <span class="alternative-font text-color-light">لورم ایپسوم</span> لورم
+                                    ایپسوم
+                                    متن ساختگی با تولید سادگی نامفهوم</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter"
+                         data-appear-animation-delay="300">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="icons icon-screen-desktop text-color-light"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-color-light text-4 mb-2">لایت باکس</h4>
+                                <p class="text-color-light opacity-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                    از
+                                    صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                    مجله</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class=" bg-color-dark section section-text-light m-0">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="font-weight-bold text-7">- تماس با ما</h2>
+                        <p class="custom-opacity-font">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                            با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه</p>
+                        <div class="row">
+                            <div class="col-md-6 custom-sm-margin-top">
+                                <h4 class="mb-1">با ما تماس بگیرید</h4>
+                                <a href="tel:+1234567890" class="text-decoration-none" target="_blank"
+                                   title="Call Us">
+											<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
+												تلفن
+												<span class="info text-5 ltr-text mt-1">
+													123 456 7890
+												</span>
+											</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 custom-sm-margin-top">
+                                <h4 class="mb-1">محل ما</h4>
+                                <p class="custom-opacity-font">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                    چاپ
+                                    و با استفاده</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 custom-sm-margin-top">
+                                <h4 class="mb-1">به ما ایمیل بزنید</h4>
+                                <a href="" class="text-decoration-none" target="_blank"
+                                   title="Mail Us">
+											<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
+												ایمیل
+												<span class="info text-5 mt-1">
+													mail@example.com
+												</span>
+											</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6 custom-sm-margin-top">
+                                <h4 class="mb-1">شبکه های اجتماعی</h4>
+                                <ul class="social-icons social-icons-clean custom-social-icons-style-1 mt-2 custom-opacity-font">
+                                    <li class="social-icons-facebook">
+                                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icons-twitter">
+                                        <a href="https://www.twitter.com/" target="_blank" title="Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icons-instagram">
+                                        <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icons-linkedin">
+                                        <a href="https://www.linkedin.com/" target="_blank" title="Linkedin">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 custom-sm-margin-top">
+                        <h2 class="font-weight-bold text-7 pb-1">- برای ما بنویسید</h2>
+                        <form class="contact-form custom-contact-form-style-1" action=""
+                              method="POST">
+                            <div class="contact-form-success alert alert-success d-none mt-4">
+                                <strong>موفقیت!</strong> پیام شما به ما ارسال شد.
+                            </div>
+
+                            <div class="contact-form-error alert alert-danger d-none mt-4">
+                                <strong>خطا!</strong> خطایی در ارسال پیام شما پیش آمد.
+                                <span class="mail-error-message text-1 d-block"></span>
+                            </div>
+
+                            <input type="hidden" name="subject" value="Contact Message Received">
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <div class="custom-input-box">
+                                        <i class="icon-user icons text-color-primary"></i>
+                                        <input type="text" value="" data-msg-required="لطفا نام خود را وارد کنید."
+                                               maxlength="100" class="form-control" name="name" placeholder="نام*"
+                                               required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <div class="custom-input-box">
+                                        <i class="icon-envelope icons text-color-primary"></i>
+                                        <input type="email" value=""
+                                               data-msg-required="لطفا آدرس ایمیل خود را وارد کنید."
+                                               data-msg-email="لطفا یک آدرس ایمیل معتبر وارد کنید." maxlength="100"
+                                               class="form-control text-left" name="email" placeholder="*ایمیل"
+                                               dir="ltr" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <div class="custom-input-box">
+                                        <i class="icon-bubble icons text-color-primary"></i>
+
+                                        <textarea maxlength="5000" data-msg-required="لطفا پیام خود را وارد کنید."
+                                                  rows="4" class="form-control" name="message" placeholder="پیام*"
+                                                  required></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <input type="submit" value="ثبت"
+                                           class="btn btn-outline custom-border-width btn-primary custom-border-radius font-weight-semibold text-uppercase"
+                                           data-loading-text="در حال بارگذاری ...">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+{% endblock %}
